@@ -5,20 +5,20 @@
 class Patchline < Formula
   desc "Streamline OpenCode plugin updates."
   homepage "https://github.com/AksharP5/Patchline"
-  version "1.1.3"
+  version "1.1.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/AksharP5/Patchline/releases/download/v1.1.3/patchline_1.1.3_darwin_amd64.tar.gz"
-      sha256 "a14775a375873c951232e43d07caab09b13f8b17fa987e883e18bb88a5ac122a"
+      url "https://github.com/AksharP5/Patchline/releases/download/v1.1.4/patchline_1.1.4_darwin_amd64.tar.gz"
+      sha256 "a8943018cbc407f24e1c00a527ab633a5d20da77e0e30337b4adf20089c1563a"
 
       def install
         bin.install "patchline"
       end
     end
     on_arm do
-      url "https://github.com/AksharP5/Patchline/releases/download/v1.1.3/patchline_1.1.3_darwin_arm64.tar.gz"
-      sha256 "d4fed6747e4a3f3f7362f25bf3c155b974a9095479b61b47c90833fe23ed32c3"
+      url "https://github.com/AksharP5/Patchline/releases/download/v1.1.4/patchline_1.1.4_darwin_arm64.tar.gz"
+      sha256 "b1b3fbdecf73c68b3b21d7b64376b623c13f57f4ce9dadb1ba2061019efcd249"
 
       def install
         bin.install "patchline"
@@ -29,8 +29,8 @@ class Patchline < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AksharP5/Patchline/releases/download/v1.1.3/patchline_1.1.3_linux_amd64.tar.gz"
-        sha256 "0df37b97bbe65b0fcfdf553b4f54020d6d4b6c16c2678b8f89387ecc2b2e87d6"
+        url "https://github.com/AksharP5/Patchline/releases/download/v1.1.4/patchline_1.1.4_linux_amd64.tar.gz"
+        sha256 "9de5b7555a4963b0026c3e77d0823e59fd2f628cf6df92ccb757d197e2c54ab9"
 
         def install
           bin.install "patchline"
@@ -39,8 +39,8 @@ class Patchline < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AksharP5/Patchline/releases/download/v1.1.3/patchline_1.1.3_linux_arm64.tar.gz"
-        sha256 "728f62b2a1231dbb17f018fc12dc223ea4799f3909460834801a044d49ed4058"
+        url "https://github.com/AksharP5/Patchline/releases/download/v1.1.4/patchline_1.1.4_linux_arm64.tar.gz"
+        sha256 "f91d405298cb7f2b795ee9c31fbd243c8eeb5437d7da0e52f386e656dc9b0cf1"
 
         def install
           bin.install "patchline"
