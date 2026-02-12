@@ -1,20 +1,20 @@
 class Blippy < Formula
   desc "GitHub in your terminal"
   homepage "https://github.com/AksharP5/blippy"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/AksharP5/blippy/releases/download/v0.1.2/blippy-aarch64-apple-darwin.tar.gz"
-      sha256 "dcfe58319713d845b91dc0a96b3956aa02734a63c2d13155d41aae98f91aec78"
+      url "https://github.com/AksharP5/blippy/releases/download/v0.1.3/blippy-aarch64-apple-darwin.tar.gz"
+      sha256 "16154669e3bd9612a894d99c3ed4a2125b94029ff0fc85a5af202526c5c5130d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/AksharP5/blippy/releases/download/v0.1.2/blippy-x86_64-apple-darwin.tar.gz"
-      sha256 "e3db2c042cc9d78b16e07b9213ce33265fb016c206877a4474b616d9f68775d3"
+      url "https://github.com/AksharP5/blippy/releases/download/v0.1.3/blippy-x86_64-apple-darwin.tar.gz"
+      sha256 "b80658d6f90149f94855d8c051a3943bb2ba3f56853c63a18388f49b61dc0a61"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/AksharP5/blippy/releases/download/v0.1.2/blippy-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1fab2136347eb23965d9263f5d0681852897e8309ebaf80a53953237e8aa0feb"
+      url "https://github.com/AksharP5/blippy/releases/download/v0.1.3/blippy-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5948509f4a172efe13d025614290ca95a61c7296626f9e32a225e010203b9679"
   end
 
   BINARY_ALIASES = {
